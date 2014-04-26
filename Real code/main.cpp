@@ -20,8 +20,8 @@ int randRange (int low, int high)
 int main ()
 {
     srand( time_t( NULL ) );
-    for ( int i = 0; i < 1000; ++i )
+    for ( int i = 0; i < 100; ++i )
     {
-        cout << randRange( 4, 10 ) << '\n';
+        cout << randRange( 1, 2 ) << '\n';
     }
 }
