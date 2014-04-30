@@ -10,6 +10,7 @@
 #include <cstdlib>
 #include <iostream>
 using namespace std;
+
 int randRange (int low, int high)
 {
     // we get a random number, get it to be between 0 and the number
@@ -20,18 +21,18 @@ int randRange (int low, int high)
 
 int main ()
 {
-    int Coin = 0;
     srand( time_t( NULL ) );
     for ( int i = 0; i < 100; ++i )
     {
-        Coin = randRange( 4, 10 );
-        switch (Coin)
+        
+        switch (randRange( 1, 2 )) // At this point, i'm merely trying to output the appropriate text based on the result.
         {
             case 2 : cout << "Heads \n";
                 break;
             case 1 : cout << "Tails \n";
                 break;
             default: cout << "Error \n";
+                break;
         }
     }
 }
